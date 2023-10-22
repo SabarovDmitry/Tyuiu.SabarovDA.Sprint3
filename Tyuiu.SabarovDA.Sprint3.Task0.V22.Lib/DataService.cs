@@ -10,11 +10,11 @@ namespace Tyuiu.SabarovDA.Sprint3.Task0.V22.Lib
     {
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
-            double multiplySeries = 0;
+            double multiplySeries = 1;
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                multiplySeries = multiplySeries + ((Math.Pow(value, i) + 4) * Math.Cos(value));
+                multiplySeries = multiplySeries * ((Math.Pow(value, i) + 4) * Math.Cos(value));
             }
             return Math.Round(multiplySeries, 3);
 ;
